@@ -1,0 +1,6 @@
+{
+  "name": "ktd khata - Digital Ledger & Loan Manager",
+  "description": "ktd khata - Complete digital bahi khata, credit ledger, loan management with auto-installments, bulk WhatsApp reminders, reports, and multi-book business accounting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
