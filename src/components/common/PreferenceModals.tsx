@@ -214,11 +214,11 @@ export const SyncStatusModal: React.FC = () => {
 };
 
 export const ShopProfileModal: React.FC = () => {
-  const { shop, updateShop, closeModal } = useKhata();
-  const [name, setName] = useState(shop.name);
-  const [owner, setOwner] = useState(shop.ownerName);
-  const [phone, setPhone] = useState(shop.phone);
-  const [address, setAddress] = useState(shop.address);
+  const { shop, user, updateShop, closeModal } = useKhata();
+  const [name, setName] = useState(user?.shopName || shop.name);
+  const [owner, setOwner] = useState(user?.name || shop.ownerName);
+  const [phone, setPhone] = useState(user?.phone || shop.phone);
+  const [address, setAddress] = useState(shop.address || '');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

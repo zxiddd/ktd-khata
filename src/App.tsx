@@ -108,7 +108,7 @@ const MainAppContent: React.FC = () => {
         {activeModal === 'CHANGE_LANGUAGE' && <ChangeLanguageModal />}
         {activeModal === 'CUSTOMIZE_LABELS' && <CustomizeLabelsModal />}
         {activeModal === 'SYNC_STATUS' && <SyncStatusModal />}
-        {activeModal === 'SHOP_PROFILE' && <ShopProfileModal />}
+        {(activeModal === 'SHOP_PROFILE' || activeModal === 'EDIT_SHOP') && <ShopProfileModal />}
         {activeModal === 'APK_DOWNLOAD' && <ApkDownloadModal />}
       </div>
     </div>

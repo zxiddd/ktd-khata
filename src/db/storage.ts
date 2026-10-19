@@ -85,7 +85,7 @@ export const StorageEngine = {
       id: 'audit-init',
       bookId: 'book-1',
       action: 'APP_INITIALIZED',
-      details: 'Ok Khata ledger started with Kachhi Textiles',
+      details: 'ktd khata ledger initialized',
       timestamp: new Date().toISOString(),
     },
   ]),

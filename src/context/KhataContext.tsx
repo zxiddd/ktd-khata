@@ -258,6 +258,16 @@ export const KhataProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const updateShop = (newShop: Shop) => {
     setShopState(newShop);
     StorageEngine.saveShop(newShop);
+    if (user) {
+      const updatedUser = {
+        ...user,
+        name: newShop.ownerName || user.name,
+        shopName: newShop.name || user.shopName,
+        phone: newShop.phone || user.phone,
+      };
+      setUserState(updatedUser);
+      StorageEngine.saveAuthUser(updatedUser);
+    }
   };
 
   const switchBook = (bookId: string) => {

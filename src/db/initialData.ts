@@ -2,11 +2,11 @@ import { Book, Contact, CustomLabels, LedgerEntry, Loan, Shop, ChecklistCategory
 
 export const INITIAL_SHOP: Shop = {
   id: 'shop-1',
-  name: 'Kachhi Textiles',
+  name: 'ktd khata',
   ownerName: 'Owner',
   phone: '+91 9876543210',
-  email: 'support@ktdkhata.app',
-  address: 'Main Market, City',
+  email: '',
+  address: 'Main Market',
   currency: '₹',
   createdAt: new Date().toISOString(),
 };
